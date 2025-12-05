@@ -51,10 +51,10 @@
    ;el suelo
    (make-platform(/ WIDTH 2)(- HEIGHT 25)WIDTH 50 "forestgreen")
    ;una plataforma que flote
-   (make-platform 450 300 150 20
+   (make-platform 250 280 120 20
                   "saddlebrown")
    ;una plataforma mas alta
-   (make-platform 150 200 150 20"saddlebrown")))
+   (make-platform 560 190 60 20"saddlebrown")))
 
 ;ahora nivel 2
 (define LEVEL-2
@@ -94,10 +94,10 @@
 ;posicion de las monedas
 (define COINS-LEVEL-1
   (list
-   (make-coin 200 250)
-   (make-coin 500 250)
-   (make-coin 300 320)
-   (make-coin 50 330)))
+   (make-coin 100 330)
+   (make-coin 250 240)
+   (make-coin 450 150)
+   (make-coin 350 330)))
 
   ;ahora monedas del nivel 2
 (define COINS-LEVEL-2
@@ -119,7 +119,7 @@
   (define-struct goal(x y w h color))
   ;meta de nivel 1
   (define GOAL-LEVEL-1
-    (make-goal 580 (- FLOOR-LEVEL 25)30 50 "blue"))
+    (make-goal 560 (- FLOOR-LEVEL 155)30 50 "blue"))
   ;la meta del nivel 2
   (define GOAL-LEVEL-2
            (make-goal 100 50 40 60 "blue"))
